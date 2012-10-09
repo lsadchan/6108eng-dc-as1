@@ -22,9 +22,9 @@ function login_register_modal(){
 		  	'</div>'+
 			'<form id="login-form">'+
 				'<div id="login-error" class="alert alert-error hide"></div>'+
-				'<input class="span4" type="text" name="username" required="required" value="" placeholder="Username" />'+
-				'<input class="span4" type="password" name="password" required="required" value="" placeholder="Password" />'+
-				'<button class="btn btn-info" name="submit">Login</button>'+
+				'<input class="span4" type="text" id="username" name="username" required="required" value="" placeholder="Username" />'+
+				'<input class="span4" type="password" id="password" name="password" required="required" value="" placeholder="Password" />'+
+				'<a id="login-btn" class="btn btn-info">Login</a>'+
 			'</form>'+
 			'<div class="modal-footer">'+
 		    	'<a href="#" class="btn btn-link">Forgotten Username?</a>'+
@@ -66,6 +66,32 @@ function login_register_modal(){
 		'</div>'
 		/*<!--E-Register Modal-E-->*/
 	);
+	
+	/****S**** Catch Events for Login ****S****/
+	$('#login-btn').click(function login(){
+		var username = $('#username').val();
+		var password = $('#password').val();
+
+		if((username == "damian")&&(password == "123damian123")){
+			window.location.href = "login-success.html";
+		}else{
+			$('#login-error').empty().fadeIn().append("The username and password you have entered is incorrect.");
+		}
+	});
+
+	$("#password").keypress(function(e) {
+	    if(e.which == 13) {
+	        var username = $('#username').val();
+			var password = $('#password').val();
+
+			if((username == "damian")&&(password == "123damian123")){
+				window.location.href = "login-success.html";
+			}else{
+				$('#login-error').empty().fadeIn().append("The username and password you have entered is incorrect.");
+			}
+	    }
+	});
+	/****E**** Catch Events for Login ****E****/
 }
 
 function footer(){

@@ -84,6 +84,15 @@ body{
 	border:none !important;
 }
 
+.font-white{
+	color:#FFFFFF !important;
+}
+
+.indent-justify{
+	padding-left: 10px;
+	text-align: justify;
+}
+
 .bg-off-white{
 	background:#F9F9F9;
 }
@@ -367,6 +376,22 @@ body{
 
 /****S**** Club Session ****S****/
 
+.diary-box{
+	width:316px;
+	height:225px;
+	min-height: 225px;
+	background:rgba(0,0,0,0.8);
+	padding:10px;
+	border: 1px solid #d4d4d4;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	display: inline-block;
+}
+
+.diary-box strong{
+	color:#4BB1CF;
+}
 
 /****E**** Club Session ****E****/
 
