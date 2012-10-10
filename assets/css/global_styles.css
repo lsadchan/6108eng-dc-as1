@@ -114,6 +114,10 @@ body{
 	float:left;
 }
 
+.float-right{
+	float:right;
+}
+
 /****E**** Small Styles ****E****/
 
 /****S**** Header ****S****/
@@ -376,22 +380,71 @@ body{
 
 /****S**** Club Session ****S****/
 
+#cal-dates{
+	width:840px;
+	height:auto;
+	margin-left:auto;
+	margin-right: auto;
+}
+
 .diary-box{
-	width:316px;
-	height:225px;
-	min-height: 225px;
+	width:185px;
+	height:auto;
 	background:rgba(0,0,0,0.8);
 	padding:10px;
+	text-align:center;
 	border: 1px solid #d4d4d4;
 	border-radius:5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
+	margin-top:4px;
 	display: inline-block;
 }
 
 .diary-box strong{
+	font-size:9pt;
+	font-weight:300;
 	color:#4BB1CF;
 }
 
+.diary-box button{
+	width:185px;
+	margin-top:15px;
+}
+
+.month-tag{
+	width:auto;
+	overflow:hidden;
+}
+
+#oct-tag{
+	margin-top:42px;
+}
+
+#nov-tag{
+	margin-top:145px;
+}
+
+#dec-tag{
+	margin-top:350px;
+	margin-right:-70px;
+}
+
+.intro p{
+	text-align:justify;
+}
+
 /****E**** Club Session ****E****/
+
+/****S**** Racing Team ****S****/
+
+#racing-team-tbl tr, #frostbite-tbl tr, #pendle-tbl tr{
+	background:rgba(255,255,255,0.8);
+}
+
+#racing-team-tbl p, #frostbite-tbl p, #pendle-tbl p{
+	text-align:justify;
+}
+
+/****E**** Racing Team ****E****/
 

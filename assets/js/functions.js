@@ -109,11 +109,13 @@ function main_nav(page){
 	var li_home = null;
 	var li_club_sessions = null;
 	var li_lessons = null;
+	var li_racing_team = null;
 	var li_about_us =null;
 	
 	if(page =="home"){li_home = "active"};
 	if(page =="club_sessions"){li_club_sessions = "active"};
 	if(page =="ski_lessons"){li_lessons = "active"};
+	if(page =="racing_team"){li_racing_team = "active"};
 	if(page =="about_us"){li_about_us = "active"};
 	
 	$(".include-navigation").append(
@@ -125,7 +127,7 @@ function main_nav(page){
 					  '<li class="'+li_home+'" ><a accessKey="h" href="index.html">Home</a></li>'+
 					  '<li class="'+li_lessons+'"><a accessKey="l" href="ski_lessons.html">Learn To Ski</a></li>'+
 					  '<li class="'+li_club_sessions+'"><a accessKey="s" href="club_sessions.html">Club Sessions</a></li>'+
-					  '<li><a accessKey="r" href="#">Racing Team</a></li>'+
+					  '<li class="'+li_racing_team+'"><a accessKey="r" href="racing_team.html">Racing Team</a></li>'+
 					  '<li class="'+li_about_us+'"><a accessKey="a" href="about_us.html">About Us</a></li>'+
 					'</ul>'+
 				'</div>'+

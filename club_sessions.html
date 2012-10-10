@@ -10,6 +10,8 @@
 <script src="assets/js/jquery-1.7.1.min.js" type="text/javascript"></script>
 <script src="assets/js/functions.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap-tooltip.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap-popover.js" type="text/javascript"></script>
 <title>Oval Ski Club | Club Sessions</title>
 </head>
 
@@ -18,30 +20,286 @@
 		<!--S-Header-S--><div class="include-header"><!--This is included in the assets/js/functions.js file--></div><!--E-Header-E-->
 		<!--S-Navigation-S--><div class="include-navigation"><!--This is included in the assets/js/functions.js file--></div><!--E-Navigation-E-->
 		<h2>Club Sessions</h2>
-		<div class="diary-box">
-			<p><strong><span class="icon-calendar"> </span>&nbsp; Saturday 13th October 2012</strong></p>
-			<p>&nbsp;<strong>10:00 - 11:00</strong></p>
-			<p class="indent-justify"><span class="font-white">JC for under 11's. New beginners lessons start. Junior beginners under 11yrs welcome to enrole for new block of lessons.</span></p>
-			<p>&nbsp;<strong>11:30 - 13:00</strong></p>
-			<p class="indent-justify"><span class="font-white">JC for 11+. New beginners lessons start. Juniors beginners 11yrs+ welcome to enrole for new block of lessons</span></p>
+		<hr/>
+		<div class="intro">
+			<p>
+				The club holds sessions for both Juniors and Adults and covers the full spectrum of ability, from first timers to seasoned racers.
+				Everyone is welcome to join the club to ski. If you are a beginner then please check the diary for the start date of the next set of beginners 					lessons.
+			</p>
+			<p>
+				As we are a members only club everyone must join prior to skiing (see costs below). This only takes a few minutes and can be done at your first 				visit. Please remember that we are a voluntary, none profit making organisation, so all money raised through membership is used for equipment, 					instructor training etc so everyone benefits. You will also receive discounts from various local sports shops.
+			</p>
+			</br>
+			<p>
+				Check out the sessions we hold below:
+			</p>
 		</div>
-		<div class="diary-box">
-			<p><strong><span class="icon-calendar"> </span>&nbsp; Sunday 7th October 2012</strong></p>
-			<p>&nbsp;<strong>17:00 - 18:00</strong></p>
-			<p class="indent-justify">&nbsp; <span class="font-white">AC - Beginners Lessons (Week 3 of 3)</span></p>
-			<p>&nbsp;<strong>18:00 - 19:00</strong></p>
-			<p class="indent-justify">&nbsp; <span class="font-white">AC - Open Skiing Session &amp; Improver Lessons</span></p>
-			<p>&nbsp;<strong>19:00 - 20:00</strong></p>
-			<p class="indent-justify">&nbsp; <span class="font-white">AC - Intermediate/Advanced Lessons</span></p>
-		</div>
-		<div class="diary-box">
-			<p><strong><span class="icon-calendar"> </span>&nbsp; Sunday 7th October 2012</strong></p>
-			<p>&nbsp;<strong>17:00 - 18:00</strong></p>
-			<p>&nbsp; <span class="font-white">AC - Beginners Lessons (Week 3 of 3)</span></p>
-			<p>&nbsp;<strong>18:00 - 19:00</strong></p>
-			<p>&nbsp; <span class="font-white">AC - Open Skiing Session &amp; Improver Lessons</span></p>
-			<p>&nbsp;<strong>19:00 - 20:00</strong></p>
-			<p>&nbsp; <span class="font-white">AC - Intermediate/Advanced Lessons</span></p>
+		<table class="table">
+			<tr class="bg-trans-white"><td>
+				<label id="oct-tag" class="month-tag label label-info float-left">October</label>
+				<label id="nov-tag" class="month-tag label label-info float-right">November</label>
+				<label id="dec-tag" class="month-tag label label-info float-right">December</label>
+				<div id="cal-dates">
+					<div class="diary-box">
+						<p><strong><span class="icon-calendar"></span>&nbsp; Saturday 13th October 2012</strong></p>
+						<button class="btn" onclick="javascript:$('#13oct').toggle();">View Lessons</button>
+						<div id="13oct" class="popover">
+							<div class="popover-title">Junior Clubs - 13/10/12</div>
+							<div class="popover-content">
+								<h5>10:00 - 11:00</h5>
+								<p>Junior Club for under 11's. New beginners lessons start.</p>
+								<p>Junior beginners under 11yrs welcome to enrole for new block of lessons.</p>
+								<h5>11:30 - 13:00</h5>
+								<p>Junior Club for 11+. New beginners lessons start.</p>
+								<p>Juniors beginners 11yrs+ welcome to enrole for new block of lessons.</p>
+							</div>
+						</div>
+					</div>
+					<div class="diary-box">
+						<p><strong><span class="icon-calendar"></span>&nbsp; Sunday 14th October 2012</strong></p>
+						<button class="btn" onclick="javascript:$('#14oct').toggle();">View Lessons</button>
+						<div id="14oct" class="popover">
+							<div class="popover-title">Adult Clubs - 14/10/12</div>
+							<div class="popover-content">
+								<h5>17:00 - 18:00</h5>
+								<p>Adult Club - Beginners lessons (Week 1 of 3).</p>
+								<h5>18:00 - 19:00</h5>
+								<p>Adult Club - Open skiing session &amp; improver lessons.</p>
+								<h5>19:00 - 20:00</h5>
+								<p>Adult Club - Intermediate/advanced lessons.</p>
+							</div>
+						</div>
+					</div>
+					<div class="diary-box">
+						<p><strong><span class="icon-calendar"></span>&nbsp; Saturday 20th October 2012</strong></p>
+						<button class="btn" onclick="javascript:$('#20oct').toggle();">View Lessons</button>
+						<div id="20oct" class="popover">
+							<div class="popover-title">Junior Clubs - 20/10/12</div>
+							<div class="popover-content">
+								<h5>10:00 - 11:00</h5>
+								<p>Junior Club for under 11's including the under 5's taster session.</p>
+								<h5>11:30 - 13:00</h5>
+								<p>Junior Club for 11+</p>
+							</div>
+						</div>
+					</div>
+					<div class="diary-box">
+						<p><strong><span class="icon-calendar"></span>&nbsp; Sunday 21st October 2012</strong></p>
+						<button class="btn" onclick="javascript:$('#21oct').toggle();">View Lessons</button>
+						<div id="21oct" class="popover">
+							<div class="popover-title">Adult Clubs - 21/10/12</div>
+							<div class="popover-content">
+								<h5>17:00 - 18:00</h5>
+								<p>Adult Club - Beginners lessons (Week 2 of 3).</p>
+								<h5>18:00 - 19:00</h5>
+								<p>Adult Club - Open skiing session &amp; improver lessons.</p>
+								<h5>19:00 - 20:00</h5>
+								<p>Adult Club - Intermediate/advanced lessons.</p>
+							</div>
+						</div>
+					</div>
+					<div class="diary-box">
+						<p><strong><span class="icon-calendar"></span>&nbsp; Saturday 27th October 2012</strong></p>
+						<button class="btn" onclick="javascript:$('#27oct').toggle();">View Lessons</button>
+						<div id="27oct" class="popover">
+							<div class="popover-title">Junior Clubs - 27/10/12</div>
+							<div class="popover-content">
+								<h5>10:00 - 11:00</h5>
+								<p>Junior Club for under 11's.</p>
+								<h5>11:30 - 13:00</h5>
+								<p>Junior Club for 11+</p>
+							</div>
+						</div>
+					</div>
+					<div class="diary-box">
+						<p><strong><span class="icon-calendar"></span>&nbsp; Sunday 28th October 2012</strong></p>
+						<button class="btn" onclick="javascript:$('#28oct').toggle();">View Lessons</button>
+						<div id="28oct" class="popover">
+							<div class="popover-title">Adult Clubs - 21/10/12</div>
+							<div class="popover-content">
+								<h5>17:00 - 18:00</h5>
+								<p>Adult Club - Beginners lessons (Week 3 of 3).</p>
+								<h5>18:00 - 19:00</h5>
+								<p>Adult Club - Open skiing session &amp; improver lessons.</p>
+								<h5>19:00 - 20:00</h5>
+								<p>Adult Club - Intermediate/advanced lessons.</p>
+							</div>
+						</div>
+					</div>
+					<div class="diary-box">
+						<p><strong><span class="icon-calendar"></span>&nbsp; Saturday 3rd November 2012</strong></p>
+						<button class="btn" onclick="javascript:$('#3nov').toggle();">View Lessons</button>
+						<div id="3nov" class="popover">
+							<div class="popover-title">Junior Clubs - 03/11/12</div>
+							<div class="popover-content">
+								<h5>10:00 - 11:00</h5>
+								<p>Junior Club for Under 11's. New beginners lessons start.</p>
+								<p>Junior beginners under 11yrs welcome to enrole for new block of lessons.</p>
+								<h5>11:30 - 13:00</h5>
+								<p>Junior Club for 11+. New beginners lessons start.</p>
+								<p>Juniors beginners 11yrs+ welcome to enrole for new block of lessons.</p>
+							</div>
+						</div>
+					</div>
+					<div class="diary-box">
+						<p><strong><span class="icon-calendar"></span>&nbsp; Sunday 4th November 2012</strong></p>
+						<button class="btn" onclick="javascript:$('#4nov').toggle();">View Lessons</button>
+						<div id="4nov" class="popover">
+							<div class="popover-title">Adult Clubs - 04/11/12</div>
+							<div class="popover-content">
+								<h5>17:00 - 18:00</h5>
+								<p>Adult Club - Beginners lessons (Week 1 of 3).</p>
+								<h5>18:00 - 19:00</h5>
+								<p>Adult Club - Open skiing session &amp; improver lessons.</p>
+								<h5>19:00 - 20:00</h5>
+								<p>Adult Club - Intermediate/advanced lessons.</p>
+							</div>
+						</div>
+					</div>
+					<div class="diary-box">
+						<p><strong><span class="icon-calendar"></span>&nbsp; Saturday 10th November 2012</strong></p>
+						<button class="btn" onclick="javascript:$('#10nov').toggle();">View Lessons</button>
+						<div id="10nov" class="popover">
+							<div class="popover-title">Junior Clubs - 10/11/12</div>
+							<div class="popover-content">
+								<h5>10:00 - 11:00</h5>
+								<p>Junior Club for under 11's.</p>
+								<h5>11:30 - 13:00</h5>
+								<p>Junior Club for 11+</p>
+							</div>
+						</div>
+					</div>
+					<div class="diary-box">
+						<p><strong><span class="icon-calendar"></span>&nbsp; Sunday 11th November 2012</strong></p>
+						<button class="btn" onclick="javascript:$('#11nov').toggle();">View Lessons</button>
+						<div id="11nov" class="popover">
+							<div class="popover-title">Adult Clubs - 11/11/12</div>
+							<div class="popover-content">
+								<h5>17:00 - 18:00</h5>
+								<p>Adult Club - Beginners lessons (Week 2 of 3).</p>
+								<h5>18:00 - 19:00</h5>
+								<p>Adult Club - Open skiing session &amp; improver lessons.</p>
+								<h5>19:00 - 20:00</h5>
+								<p>Adult Club - Intermediate/advanced lessons.</p>
+							</div>
+						</div>
+					</div>
+					<div class="diary-box">
+						<p><strong><span class="icon-calendar"></span>&nbsp; Saturday 17th November 2012</strong></p>
+						<button class="btn" onclick="javascript:$('#17nov').toggle();">View Lessons</button>
+						<div id="17nov" class="popover">
+							<div class="popover-title">Junior Clubs - 17/11/12</div>
+							<div class="popover-content">
+								<h5>10:00 - 11:00</h5>
+								<p>Junior Club for under 11's.</p>
+								<h5>11:30 - 13:00</h5>
+								<p>Junior Club for 11+</p>
+							</div>
+						</div>
+					</div>
+					<div class="diary-box">
+						<p><strong><span class="icon-calendar"></span>&nbsp; Sunday 18th November 2012</strong></p>
+						<button class="btn" onclick="javascript:$('#18nov').toggle();">View Lessons</button>
+						<div id="18nov" class="popover">
+							<div class="popover-title">Adult Clubs - 18/11/12</div>
+							<div class="popover-content">
+								<h5>17:00 - 18:00</h5>
+								<p>Adult Club - Beginners lessons (Week 3 of 3).</p>
+								<h5>18:00 - 19:00</h5>
+								<p>Adult Club - Open skiing session &amp; improver lessons.</p>
+								<h5>19:00 - 20:00</h5>
+								<p>Adult Club - Intermediate/advanced lessons.</p>
+							</div>
+						</div>
+					</div>
+					<div class="diary-box">
+						<p><strong><span class="icon-calendar"></span>&nbsp; Saturday 24th November 2012</strong></p>
+						<button class="btn" onclick="javascript:$('#24nov').toggle();">View Lessons</button>
+						<div id="24nov" class="popover">
+							<div class="popover-title">Junior Clubs - 24/11/12</div>
+							<div class="popover-content">
+								<h5>10:00 - 11:00</h5>
+								<p>Junior Club for Under 11's. New beginners lessons start.</p>
+								<p>Junior beginners under 11yrs welcome to enrole for new block of lessons.</p>
+								<h5>11:30 - 13:00</h5>
+								<p>Junior Club for 11+. New beginners lessons start.</p>
+								<p>Juniors beginners 11yrs+ welcome to enrole for new block of lessons.</p>
+							</div>
+						</div>
+					</div>
+					<div class="diary-box">
+						<p><strong><span class="icon-calendar"></span>&nbsp; Sunday 25th November 2012</strong></p>
+						<button class="btn" onclick="javascript:$('#25nov').toggle();">View Lessons</button>
+						<div id="25nov" class="popover">
+							<div class="popover-title">Adult Clubs - 25/11/12</div>
+							<div class="popover-content">
+								<h5>17:00 - 18:00</h5>
+								<p>Adult Club - Beginners lessons (Week 1 of 4).</p>
+								<h5>18:00 - 19:00</h5>
+								<p>Adult Club - Open skiing session &amp; improver lessons.</p>
+								<h5>19:00 - 20:00</h5>
+								<p>Adult Club - Intermediate/advanced lessons.</p>
+							</div>
+						</div>
+					</div>
+					<div class="diary-box">
+						<p><strong><span class="icon-calendar"></span>&nbsp; Saturday 1st December 2012</strong></p>
+						<button class="btn" onclick="javascript:$('#1dec').toggle();">View Lessons</button>
+						<div id="1dec" class="popover">
+							<div class="popover-title">Junior Clubs - 01/12/12</div>
+							<div class="popover-content">
+								<h5>10:00 - 11:00</h5>
+								<p>Junior Club for under 11's.</p>
+								<h5>11:30 - 13:00</h5>
+								<p>Junior Club for 11+</p>
+							</div>
+						</div>
+					</div>
+					<div class="diary-box">
+						<p><strong><span class="icon-calendar"></span>&nbsp; Sunday 2nd December 2012</strong></p>
+						<button class="btn" onclick="javascript:$('#2dec').toggle();">View Lessons</button>
+						<div id="2dec" class="popover">
+							<div class="popover-title">Adult Clubs - 02/12/12</div>
+							<div class="popover-content">
+								<h5>17:00 - 18:00</h5>
+								<p>Adult Club - Beginners lessons (Week 2 of 4).</p>
+								<h5>18:00 - 19:00</h5>
+								<p>Adult Club - Open skiing session &amp; improver lessons.</p>
+								<h5>19:00 - 20:00</h5>
+								<p>Adult Club - Intermediate/advanced lessons.</p>
+							</div>
+						</div>
+					</div>
+					<div class="diary-box">
+						<p><strong><span class="icon-calendar"></span>&nbsp; Saturday 8th December 2012</strong></p>
+						<button class="btn" onclick="javascript:$('#8dec').toggle();">View Lessons</button>
+						<div id="8dec" class="popover">
+							<div class="popover-title">Junior Clubs - 08/12/12</div>
+							<div class="popover-content">
+								<h5>10:00 - 11:00</h5>
+								<p>Junior Club for under 11's.</p>
+								<h5>11:30 - 13:00</h5>
+								<p>Junior Club for 11+</p>
+							</div>
+						</div>
+					</div>
+					<div class="diary-box">
+						<p><strong><span class="icon-calendar"></span>&nbsp; Sunday 9th December 2012</strong></p>
+						<button class="btn" onclick="javascript:$('#9dec').toggle();">View Lessons</button>
+						<div id="9dec" class="popover">
+							<div class="popover-title">Adult Clubs - 02/12/12</div>
+							<div class="popover-content">
+								<h5>17:00 - 18:00</h5>
+								<p>Adult Club - Beginners lessons (Week 3 of 4).</p>
+								<h5>18:00 - 19:00</h5>
+								<p>Adult Club - Open skiing session &amp; improver lessons.</p>
+								<h5>19:00 - 20:00</h5>
+								<p>Adult Club - Intermediate/advanced lessons.</p>
+							</div>
+						</div>
+					</div>
+				</td></tr>
+			</table>
 		</div>
 	</div>
 	<!--S-Footer-S--><div class="include-footer"><!--This is included in the assets/js/functions.js file--></div><!--E-Footer-E-->
