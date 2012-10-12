@@ -3,9 +3,9 @@
 function header(){
 	$(".include-header").append(
 		'<div class="header">'+
-			'<a href="#" id="a-mode" class="float-left">Accessibility Mode</a>'+
-			'<a href="#" data-toggle="modal" data-target="#login-modal" >Login</a>'+
-			'<a href="#" data-toggle="modal" data-target="#register-modal">Register</a>'+
+			'<a href="#" id="a-mode" class="float-left" onclick="javascript:accessibility();" accesskey="o" >Accessibility Mode</a>'+
+			'<a href="#" data-toggle="modal" data-target="#login-modal" accesskey="1" >Login</a>'+
+			'<a href="#" data-toggle="modal" data-target="#register-modal" accesskey="2" >Register</a>'+
 		'</div>'
 	);
 }
@@ -75,7 +75,7 @@ function login_register_modal(){
 		if((username == "damian")&&(password == "123damian123")){
 			window.location.href = "login-success.html";
 		}else{
-			$('#login-error').empty().fadeIn().append("The username and password you have entered is incorrect.");
+			$('#login-error').empty().fadeIn().append("<p>The username and password you have entered is incorrect.</p><p>Username:damian Password:123damian123</p>");
 		}
 	});
 
@@ -99,8 +99,8 @@ function footer(){
 		'<div class="footer">'+
 			'<hr/>'+
 			'<p>© Oval Ski Club 2012</p>'+
-			'<a accesskey="c" href="contact_us.html">Contact Us</a>'+
-			'<a accesskey="f" href="faq.html">FAQ</a>'+
+			'<a accesskey="c" href="contact_us.html"><em>C</em>ontact Us</a>'+
+			'<a accesskey="f" href="faq.html"><em>F</em>AQ</a>'+
 		'</div>'
 	);
 }
@@ -124,16 +124,20 @@ function main_nav(page){
 				'<div class="navbar-inner">'+
 					'<a class="brand" href="index.html">Oval Ski Club</a>'+
 					'<ul class="nav">'+
-					  '<li class="'+li_home+'" ><a accessKey="h" href="index.html">Home</a></li>'+
-					  '<li class="'+li_lessons+'"><a accessKey="l" href="ski_lessons.html">Learn To Ski</a></li>'+
-					  '<li class="'+li_club_sessions+'"><a accessKey="s" href="club_sessions.html">Club Sessions</a></li>'+
-					  '<li class="'+li_racing_team+'"><a accessKey="r" href="racing_team.html">Racing Team</a></li>'+
-					  '<li class="'+li_about_us+'"><a accessKey="a" href="about_us.html">About Us</a></li>'+
+					  '<li class="'+li_home+'" ><a accesskey="h" href="index.html"><em>H</em>ome</a></li>'+
+					  '<li class="'+li_lessons+'"><a accesskey="l" href="ski_lessons.html"><em>L</em>earn To Ski</a></li>'+
+					  '<li class="'+li_club_sessions+'"><a accesskey="s" href="club_sessions.html">Club <em>S</em>essions</a></li>'+
+					  '<li class="'+li_racing_team+'"><a accesskey="r" href="racing_team.html"><em>R</em>acing Team</a></li>'+
+					  '<li class="'+li_about_us+'"><a accesskey="a" href="about_us.html"><em>A</em>bout Us</a></li>'+
 					'</ul>'+
 				'</div>'+
 			'</div>'+
 		'</div>'
 	)
+}
+
+function accessibility(){
+	$('em').addClass('em-change');
 }
 
 /****E**** Global Functions ****E****/

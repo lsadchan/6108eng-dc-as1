@@ -12,6 +12,16 @@ body{
 	overflow:hidden;
 }
 
+.wrapper em{
+	font-style:normal;
+}
+
+.em-change{
+	font-size:12pt;
+	font-weight:bold;
+	color:#4444BB;
+}
+
 .footer{
 	width:1024px;
 	height:auto;
@@ -40,6 +50,10 @@ body{
 .footer hr{
 	margin:0;
 	margin-bottom:10px;
+}
+
+.footer em{
+	font-style:normal;
 }
 
 .content-left{
@@ -116,6 +130,10 @@ body{
 
 .float-right{
 	float:right;
+}
+
+.justify{
+	text-align:justify;
 }
 
 /****E**** Small Styles ****E****/
@@ -447,4 +465,23 @@ body{
 }
 
 /****E**** Racing Team ****E****/
+
+/****S**** About Us ****S****/
+
+.thumbnail p{
+	text-align:center;
+	font-size:9pt;
+	margin:0;
+}
+
+#team-ul{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#team-ul li{
+	background:rgba(255,255,255,0.8);
+}
+
+/****E**** About Us ****E****/
 
